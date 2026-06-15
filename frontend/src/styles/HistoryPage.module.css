@@ -1,0 +1,54 @@
+.header { margin-bottom: 20px; }
+.header h1 { font-size: 20px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.header h1 i { color: var(--blue); }
+.header p { color: var(--text2); margin-top: 4px; font-size: 13px; }
+
+.center { color: var(--text2); padding: 40px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+.errorCard {
+  background: #2d1515; border: 1px solid #7f1d1d;
+  color: #fca5a5; border-radius: var(--radius); padding: 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.empty {
+  text-align: center; padding: 60px 20px; color: var(--text2);
+}
+.empty i { font-size: 40px; display: block; margin-bottom: 12px; opacity: 0.4; }
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.row {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 12px 16px;
+  transition: border-color 0.15s;
+}
+.row:hover { border-color: #3a4565; }
+
+.rowLeft { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.lang {
+  display: inline-block; font-size: 10px; font-weight: 600; text-transform: uppercase;
+  background: var(--blue-dim); color: var(--blue);
+  padding: 2px 8px; border-radius: 10px; width: fit-content;
+}
+.snippet {
+  font-family: var(--mono); font-size: 12px; color: var(--text2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.rowMid { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.score { font-size: 12px; font-weight: 600; }
+.green { color: #22c55e; }
+.amber { color: #f59e0b; }
+.red { color: #ef4444; }
+.complexity { font-size: 12px; background: var(--bg3); padding: 2px 8px; border-radius: 8px; }
+.bugCount { font-size: 12px; color: var(--text2); display: flex; align-items: center; gap: 4px; }
+
+.rowRight { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.date { font-size: 12px; color: var(--text2); }
+.deleteBtn {
+  background: transparent; color: var(--text2); padding: 4px 6px;
+  border-radius: 6px; transition: all 0.15s;
+}
+.deleteBtn:hover { background: #2d1515; color: #ef4444; }
