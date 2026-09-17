@@ -47,14 +47,12 @@ public class ReviewController {
             return ResponseEntity.notFound().build();
         }
     }
-
     // DELETE /api/reviews/{id}
     @DeleteMapping("/reviews/{id}")
     public ResponseEntity<Void> deleteReview(@PathVariable Long id) {
         reviewAgent.deleteReview(id);
         return ResponseEntity.noContent().build();
     }
-
     // Inner error DTO
     record ErrorResponse(String message) {}
 }

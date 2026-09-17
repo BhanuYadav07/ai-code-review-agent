@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class ReviewAgent {
 
     @Autowired
-    private GeminiService geminiService;
+    private GroqService groqService;
 
     @Autowired
     private CodeReviewRepository codeReviewRepository;
@@ -24,7 +24,7 @@ public class ReviewAgent {
 
     public ReviewResponse runAgentWorkflow(ReviewRequest request) throws Exception {
 
-        ReviewResponse response = geminiService.reviewCode(
+        ReviewResponse response = groqService.reviewCode(
                 request.getCode(),
                 request.getLanguage()
         );
