@@ -8,11 +8,9 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-        import java.util.List;
+import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "${CORS_ALLOWED_ORIGINS}")
 public class ReviewController {
 
     @Autowired
